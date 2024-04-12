@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Resort - Página Inicial</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Para onde você vai?</h1>
+        <p>Preencha os campos abaixo e veja os planos disponíveis</p>
+        <div id="form_fields">
+            <form id="field_items" action="/submit" method="post">
+                <div class="item">
+                    <label for="name">Nome completo</label>
+                    <input id="name" type="text" name="name">
+                </div>
+                <div class="item">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email">
+                </div>
+                <div class="item">
+                    <label for="number">Número de telefone</label>
+                    <input id="number" type="tel" name="number" placeholder="(00) 90000-0000"
+                    pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+                </div>
+                <div class="item">
+                    <label for="in_date">Data de ida</label>
+                    <input id="in_date" type="date" name="in_date">
+                </div>
+                <div class="item">
+                    <label for="out_date">Data de volta</label>
+                    <input id="out_date" type="date" name="out_date">
+                </div>
+                <button id="send">Buscar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

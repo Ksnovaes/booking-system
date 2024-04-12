@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Resort - Registre-se</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Crie sua conta</h1>
+        <form action="/success" method="post" id="account_fields" onsubmit="return validateForm()">
+            <div class="item">
+                <label for="user">Digite um nome</label>
+                <input id="user" type="text" name="user">
+            </div>
+            <div class="item">
+                <label for="email">Digite seu email</label>
+                <input id="email" type="email" name="email">
+            </div>
+            <div class="item">
+                <label for="password">Digite sua senha</label>
+                <input id="password" type="password" name="password">
+            </div>
+            <div class="item">
+                <label for="confirm_password">Confirme sua senha</label>
+                <input id="confirm_password" type="password" name="confirm_password">
+                <span id="password_error" style="color: red;"></span>
+            </div>
+            <button id="send" type="submit">Criar conta</button>
+            <p id="success_message" style="display: none; color: green;">Conta criada com sucesso!</p>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirm_password = document.getElementById("confirm_password").value;
+            var password_error = document.getElementById("password_error");
+
+            if (password != confirm_password) {
+                password_error.textContent = "As senhas não coincidem.";
+                return false;
+            }
+
+            password_error.textContent = "";
+            document.getElementById("success_message").style.display = "block";
+            return true;
+        }
+    </script>
+</body>
+</html>

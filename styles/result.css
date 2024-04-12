@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background: #13121a;
+    --background-neutral: #24232b;
+    --color: #f8fafc;
+    --color-neutral: #4975dcc6;
+    --color-title: #57b0f0ba;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--color);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+}
+
+#res {
+    display: flex;
+    padding: 20px;
+    color: var(--color-title);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.item {
+    max-width: 50%;
+    background-color: var(--background-neutral);
+    padding: 20px;
+}
+
+#resort_title {
+    margin-bottom: 15px;
+    color: #4739a2a1;
+    font-weight: 700;
+}
+
+#resort_infos {
+    margin-bottom: 15px;
+}
+
+.verify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-neutral);
+    color: var(--color);
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.verify:hover {
+    background-color: var(--color-title);
+}
+
+
+

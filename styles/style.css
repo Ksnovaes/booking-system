@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background: #13121a;
+    --background-neutral: #24232b;
+    --color: #f8fafc;
+    --color-neutral: #4975dcc6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--color);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#title {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#form_fields {
+    background-color: var(--background-neutral);
+    padding: 20px;
+    border-radius: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item {
+    font-weight: 400;
+    background-color: #7d7c8170;
+    padding: 5px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    margin-top: 5px;
+    width: 300px;
+    height: 70px;
+}
+
+.item label {
+    display: flex;
+    justify-content: center;
+}
+
+.item input {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+}
+
+#send {
+    background-color: var(--color-neutral);
+    color: var(--background-neutral);
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    width: 300px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+#send:hover {
+    background-color: #4c61d9;
+}
+
+

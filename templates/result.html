@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Resort - Resultados</title>
+    <link rel="stylesheet" href="../styles/result.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="res">Aqui está o resultado de acordo com a sua busca</h1>
+        <div class="item">
+            <h1 id="resort_title">XYZ Resort</h1>
+            <p id="resort_infos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button class="verify" onclick="redirectToAccount()">Verificar</button>
+        </div>
+        <div class="item">
+            <h1 id="resort_title">XYZ Resort</h1>
+            <p id="resort_infos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button class="verify" onclick="redirectToAccount()">Verificar</button>
+        </div>
+        <div class="item">
+            <h1 id="resort_title">XYZ Resort</h1>
+            <p id="resort_infos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button class="verify" onclick="redirectToAccount()">Verificar</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToAccount () {
+            alert("Você precisa de uma conta para verificar outras informações!\nEstamos te redirecionando para a criação de conta.")
+            setTimeout(function() {{
+                window.location.href= "/account";
+            }}, 1000);
+        }
+    </script>
+</body>
+</html>
